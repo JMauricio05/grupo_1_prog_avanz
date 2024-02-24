@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <section class="page">
+        <header class="headerContent">
+            <h1>MyStore</h1>
+        </header>
+        <nav class="menuContent">
+            <a href="#">Seccción 1</a>
+            <a href="#">Seccción 2</a>
+            <a href="#">Seccción 3</a>
+            <a href="#">Seccción 4</a>
+            <a href="#">Seccción 5</a>
+        </nav>
+        <form action="#" method="post" class="formSearch">
+            <div>
+                <label>Artículo</label>
+                <input type="text" 
+                name="articulo" 
+                placeholder="Ingrese el nombre del artículo">
+            </div>
+            <div>
+                <label>Ordenar por</label>
+                <select name="odenarPor">
+                    <option>Promociones</option>
+                    <option>Menor a mayor precio</option>
+                    <option>Mayor a menor precio</option>
+                </select>
+            </div>
+            <div>
+                <button>Buscar</button>
+            </div>
+        </form>
+        <section class="bodyContent">
+            <h2>Lista de productos</h2>
+            <article>
+                <h3>Anrtículo 1</h3>
+                <img src="resource/img/articulo.jpg" alt="Articulo ejemplo">
+                <p>Esto es la descripción del artículo</p>
+                <p>Precio: $1'200.000</p>
+            </article>
+        </section>
+        <footer class="footerContent">
+            <p>Fin de la página</p>
+        </footer>
+        <button class="btn">Ejemplo</button>
+    </section>
+</body>
+</html>
