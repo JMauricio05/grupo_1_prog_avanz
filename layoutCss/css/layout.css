@@ -16,9 +16,9 @@ img {
     grid-template-columns: 75% 25%;
     grid-template-rows: 2fr 1fr 8fr 1fr;
     grid-template-areas: "header header"
-    "form menu"
-    "body menu"
-    "footer menu";
+        "form menu"
+        "body menu"
+        "footer menu";
 }
 
 .page .headerContent {
@@ -43,18 +43,49 @@ img {
 .page .bodyContent {
     background-color: #fff;
     grid-area: body;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.page .bodyContent .tituloArticulos {
+    width: 100%;
+    text-align: center;
+}
+
+.producto {
+    width: 250px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 8px;
+}
+
+.producto .descripcion {
+    display: none;
+}
+
+.producto:hover {
+    border-color: #0000ff;
+}
+
+.producto:hover .descripcion {
+    display: block;
+    color: #0000ff;
 }
 
 .page .footerContent {
     background-color: #4b4b4b;
     grid-area: footer;
-
 }
 
-.btn{
+.btn {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    position: relative;
-    top: -10px
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
